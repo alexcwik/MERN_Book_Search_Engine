@@ -1,7 +1,7 @@
 {
   "name": "googlebooks-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "MERN book search engine allows the user to search for books utilizing react and MongoDB.",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
@@ -17,5 +17,13 @@
   },
   "dependencies": {
     "apollo-client": "^2.6.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexcwik/MERN_Book_Search_Engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexcwik/MERN_Book_Search_Engine/issues"
+  },
+  "homepage": "https://github.com/alexcwik/MERN_Book_Search_Engine#readme"
 }
