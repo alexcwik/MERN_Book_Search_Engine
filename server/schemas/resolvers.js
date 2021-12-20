@@ -3,6 +3,9 @@ const { User, Book } = require('../models');
 const { signToken } = require('../utils/auth');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a481bc14cbdbbbfa9df235bae66f6d81a973e1cb
 const resolvers = {
     Query: {
         me: async (parent, args, context) => {
@@ -61,6 +64,7 @@ const resolvers = {
             throw new AuthenticationError('You need to be logged in!');
         }
     }
+<<<<<<< HEAD
 =======
 Query: {
     me: async (parent, args, context) => {
@@ -114,6 +118,9 @@ Mutation: {
     }
 }
 >>>>>>> fcc0ba6f2a3cefd53389fad8f5e14e4ea2f38f3f
+=======
+
+>>>>>>> a481bc14cbdbbbfa9df235bae66f6d81a973e1cb
 };
 
 module.exports = resolvers;

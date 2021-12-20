@@ -2,6 +2,10 @@ import { gql } from '@apollo/client';
 
 export const LOGIN_USER = gql`
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> a481bc14cbdbbbfa9df235bae66f6d81a973e1cb
 mutation loginUser($email: String!, $password: String!) {
   login(email: $email, password: $password) {
     token
@@ -9,6 +13,7 @@ mutation loginUser($email: String!, $password: String!) {
       _id
     }
   }
+<<<<<<< HEAD
 =======
 mutation login($email: String!, $password: String!) {
     login(email: $email, password: $password) {
@@ -19,11 +24,17 @@ mutation login($email: String!, $password: String!) {
     }
     }
 >>>>>>> fcc0ba6f2a3cefd53389fad8f5e14e4ea2f38f3f
+=======
+>>>>>>> a481bc14cbdbbbfa9df235bae66f6d81a973e1cb
 }
 `;
 
 export const ADD_USER = gql`
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> a481bc14cbdbbbfa9df235bae66f6d81a973e1cb
 mutation addUser($username: String!, $password: String!, $email: String!) {
   addUser(username: $username, password: $password, email: $email) {
     
@@ -34,6 +45,7 @@ mutation addUser($username: String!, $password: String!, $email: String!) {
       bookCount
       savedBooks {
         authors
+<<<<<<< HEAD
 =======
 mutation addUser($username: String!, $email: String!, $password: String!) {
     addUser(username: $username, email: $email, password: $password) {
@@ -41,6 +53,8 @@ mutation addUser($username: String!, $email: String!, $password: String!) {
     user {
         _id
         username
+=======
+>>>>>>> a481bc14cbdbbbfa9df235bae66f6d81a973e1cb
     }
     }
 }
@@ -55,42 +69,26 @@ mutation saveBook($book: SavedBookInput!) {
     savedBooks {
         authors
         description
+<<<<<<< HEAD
 >>>>>>> fcc0ba6f2a3cefd53389fad8f5e14e4ea2f38f3f
+=======
+>>>>>>> a481bc14cbdbbbfa9df235bae66f6d81a973e1cb
         bookId
         image
         link
         title
 <<<<<<< HEAD
+<<<<<<< HEAD
         description
+=======
+     
+>>>>>>> a481bc14cbdbbbfa9df235bae66f6d81a973e1cb
       }
     }
     token
   }
 }
 `;
-
-export const SAVE_BOOK = gql`
-    mutation saveBook($input: savedBook!) {
-    saveBook (input: $input)
-        {
-            _id
-            username
-            email
-            bookCount
-            savedBooks {
-                _id
-                bookId
-                authors
-                image
-                link
-                title
-                description
-            }
-        }
-    }
-`;
-
-
 
 export const REMOVE_BOOK = gql`
     mutation removeBook($bookId: ID!) {
@@ -109,7 +107,11 @@ export const REMOVE_BOOK = gql`
                 description
             }
         }
+<<<<<<< HEAD
 =======
+=======
+
+>>>>>>> a481bc14cbdbbbfa9df235bae66f6d81a973e1cb
     }
     }
 }
@@ -130,6 +132,9 @@ mutation removeBook($bookId: String!) {
         title
     }
     }
+<<<<<<< HEAD
 >>>>>>> fcc0ba6f2a3cefd53389fad8f5e14e4ea2f38f3f
+=======
+>>>>>>> a481bc14cbdbbbfa9df235bae66f6d81a973e1cb
 }
 `;
